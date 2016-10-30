@@ -13,7 +13,7 @@ plot(consumption$datetime, consumption$Global_active_power,
 
 
 
-## Lower left ####
+## Upper right ####
 
 plot(consumption$datetime, consumption$Voltage, 
      type = 'l',
@@ -22,7 +22,7 @@ plot(consumption$datetime, consumption$Voltage,
      ylab = "Voltage")
 
 
-## Upper right ####
+## Lower left ####
 sub_meters <- 1:3 # Sub_metering_i
 cols <- c(1,2,4) # black, red, blue plot colors
 
@@ -38,7 +38,7 @@ for (i in sub_meters) {
   
   par(new=T)  
 }
-legend(x="topright", legend=paste0("Sub_metering_", sub_meters), lty=1)
+legend(x="topright", legend=paste0("Sub_metering_", sub_meters), col=cols, lty=1)
 
 
 ## Lower right ####

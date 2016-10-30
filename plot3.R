@@ -17,6 +17,6 @@ for (i in sub_meters) {
   
   par(new=T)  
 }
-legend(x="topright", legend=paste0("Sub_metering_", sub_meters), lty=1)
+legend(x="topright", legend=paste0("Sub_metering_", sub_meters), col=cols, lty=1)
 
 dev.off()
