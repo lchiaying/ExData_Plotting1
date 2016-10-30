@@ -1,5 +1,3 @@
-setwd("D:/Coursera/DataScienceSpecialization/Course4/Project1/")
-
 source("load_data.R") # Read in data
 
 png("plot1.png", height=480, width=480)
